@@ -1,6 +1,6 @@
 # Updated lp-lab's Docker implementation to Deploy to Docker on Raspberry Pi
 
-1 Changed base image to a Raspberry Pi one: resin/rpi-raspbian:stretch
+1. Changed base image to a Raspberry Pi one: resin/rpi-raspbian:stretch
 * Added a couple of extra packages: gpgv libgpg-error0
 * Updated tini version to tini-armhf, v0.18.0
 
