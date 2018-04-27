@@ -1,11 +1,11 @@
-# Updated lp-lab's Docker implementation to Deploy to Docker on Raspberry Pi
+## Updated lp-lab's Docker implementation to Deploy to Docker on Raspberry Pi
 
 1. Changed base image to a Raspberry Pi one: resin/rpi-raspbian:stretch
-* Added a couple of extra packages: gpgv libgpg-error0
-* Updated tini version to tini-armhf, v0.18.0
+2. Added a couple of extra packages: gpgv libgpg-error0
+3. Updated tini version to tini-armhf, v0.18.0
 
-docker build --no-cache -t soulmanos/rpi-docker-pihole .
-docker run -p 53:53 -p 53:53/udp -p 80:80 -d --name pihole -e ADMIN_PASS="pihole" -e DNS1="8.8.8.8" -e DNS2="8.8.4.4" -e ServerIP="0.0.0.0" soulmanos/pihole:latest
+> docker build --no-cache -t soulmanos/rpi-docker-pihole .
+> docker run -p 53:53 -p 53:53/udp -p 80:80 -d --name pihole -e ADMIN_PASS="pihole" -e DNS1="8.8.8.8" -e DNS2="8.8.4.4" -e ServerIP="0.0.0.0" soulmanos/pihole:latest
 
 # Docker Pi-Hole
 
